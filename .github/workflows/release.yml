@@ -27,7 +27,7 @@ jobs:
     timeout-minutes: 10
     needs: test
     steps:
-      - run: actions/checkout@v4
+      - uses: actions/checkout@v4
       - name: build script
         run: bash build.sh
       - id: read-version
