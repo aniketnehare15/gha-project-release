@@ -28,7 +28,7 @@ jobs:
     needs: test
     steps:
       - name: build script
-        run: ./build.sh
+        run: bash build.sh
       - id: read-version
         run: echo "version=$(cat VERSION)" >> "$GITHUB_OUTPUT"
       - name: upload artifact
